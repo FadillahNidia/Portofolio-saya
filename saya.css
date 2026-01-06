@@ -1,0 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-custom {
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+}
+
+.border-start {
+    border-width: 4px !important;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .card {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .text-dark, 
+body.dark-mode .form-label {
+    color: #f8f9fa !important;
+}

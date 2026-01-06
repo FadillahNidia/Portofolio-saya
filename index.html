@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Nidia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="saya.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">NIDIA.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-2 fw-bold mb-3">Design <span class="text-primary">M2N</span> Code</h1>
+            <p class="lead mb-4">Membangun solusi digital yang elegan dan responsif.</p>
+            <div class="social-links mb-4">
+                <a href="https://linkedin.com/in/username" class="btn btn-outline-light rounded-circle mx-1"><i class="bi bi-linkedin"></i></a>
+                <a href="https://instagram.com/username" class="btn btn-outline-light rounded-circle mx-1"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:emailanda@gmail.com" class="btn btn-outline-light rounded-circle mx-1"><i class="bi bi-envelope"></i></a>
+            </div>
+            <a href="#resume" class="btn btn-primary btn-lg px-5">Lihat Profil</a>
+        </div>
+    </section>
+
+    <section id="resume" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center fw-bold mb-5">Riwayat & Kualifikasi</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 rounded-4 mb-4">
+                        <h5 class="fw-bold text-primary mb-4"><i class="bi bi-briefcase-fill me-2"></i>Pengalaman Kerja & Organisasi</h5>
+                        <div class="mb-3 border-start ps-3 border-primary">
+                            <h6>Pramuniaga Intern - PT. Ramayana Lestari Sentosa Tbk</h6>
+                            <p class="small text-muted">Melakukan pelayanan pelanggan dan manajemen stok barang.</p>
+                        </div>
+                        <div class="mb-3 border-start ps-3 border-success">
+                            <h6>Sekretaris Pengabdian - SDN Kayu Bongkok 2</h6>
+                            <p class="small text-muted">Mengelola administrasi dan dokumentasi kegiatan pengabdian.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm p-4 rounded-4">
+                        <h5 class="fw-bold text-primary mb-4"><i class="bi bi-mortarboard-fill me-2"></i>Pendidikan</h5>
+                        <div class="mb-3 border-start ps-3 border-info">
+                            <h6>S1 Sistem Informasi - Univ. Bina Sarana Informatika</h6>
+                            <small class="text-muted">Sedang menempuh pendidikan fokus pada manajemen IT.</small>
+                        </div>
+                        <div class="mb-3 border-start ps-3 border-info">
+                            <h6>SMKN 1 Tangerang - Jurusan Marketing</h6>
+                            <small class="text-muted">Lulus dengan fokus pada strategi pemasaran.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 rounded-4 mb-4">
+                        <h5 class="fw-bold text-primary mb-3">Skills</h5>
+                        <p class="mb-1 small">Copywriting (90%)</p>
+                        <div class="progress mb-3" style="height: 5px;"><div class="progress-bar w-90"></div></div>
+                        <p class="mb-1 small">Ms. Office (85%)</p>
+                        <div class="progress mb-3" style="height: 5px;"><div class="progress-bar w-85"></div></div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm p-4 rounded-4">
+                        <h5 class="fw-bold text-primary mb-3">Sertifikat (Klik untuk Detail)</h5>
+                        <button class="btn btn-outline-primary btn-sm mb-2 w-100 detail-btn text-start" 
+                                data-title="Ms. Excel Certification" 
+                                data-desc="Berhasil menguasai VLOOKUP, HLOOKUP, dan Index Match melalui pelatihan intensif." 
+                                data-img="sertifikat-excel.jpg">
+                                <i class="bi bi-file-earmark-check me-2"></i>Ms. Excel Index Match
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold">Detail Sertifikat</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <img src="" id="modalImage" class="img-fluid rounded shadow mb-3 d-none" alt="Sertifikat">
+                    <p id="modalDescription" class="text-dark"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="saya.js"></script>
+</body>
+</html>
